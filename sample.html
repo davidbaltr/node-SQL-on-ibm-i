@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html lang="de-DE">
+
+<head>
+	<title>SQL</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">	
+	<link rel="stylesheet" href="static/style.css">
+	
+	<!-- Bootstrap library -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<!-- fontawesome library -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/fonts/fontawesome-webfont.svg">	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+	<div class="container">
+		<div class="jumbotron">
+			<h1 align="center"> SQL Abfrage </h1>
+		</div>
+	</div>
+	<input type="text" id="query" class="form-control" name="sql" placeholder="SELECT * FROM ..." />
+	<input type="submit" id="submitform" class="btn btn-lg btn-block" value="Los" />
+	<div class="outputcontainer">
+		<table id="datatable" border="1">
+			<tr id="tableheaders"></tr>
+		</table>
+	</div>
+	<script type="text/javascript" src="static/submitForm.js"></script>
+</body>
+
+</html>
