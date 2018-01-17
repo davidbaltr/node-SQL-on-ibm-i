@@ -28,10 +28,6 @@ $(document).ready(function ()
 				{
 					showError();
 				}
-			},
-			error: function (err) 
-			{
-				console.error(err);
 			}
 		});
 	}
