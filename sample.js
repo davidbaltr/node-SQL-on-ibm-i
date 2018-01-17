@@ -27,9 +27,7 @@ app.post("/sql", function (req, res) {
     console.log("SQL statement : " + sql);
     var dbconn = new db.dbconn();
     // Connect to the DB 
-    dbconn.conn(DBname, userId, passwd, function(err){
-      console.log(err);
-    });  
+    dbconn.conn(DBname, userId, passwd);  
 
     var stmt = new db.dbstmt(dbconn);
     stmt.exec(sql, (rs) => { 
